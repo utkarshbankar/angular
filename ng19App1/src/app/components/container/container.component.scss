@@ -1,0 +1,27 @@
+.container-wrapper{
+    padding: 1rem;
+    border: 2px dotted pink;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+
+    .form-box {
+        width: 50%;
+        border-radius: 10px;
+        input{
+            width: auto;
+            height: 30px;
+            border-radius: 10px;
+        }
+    }
+
+    .form-content{
+        width: 50%;
+        justify-content: right;
+    }
+}
+
+.container-wrapper-content{
+    display: flex;
+    justify-content: center;
+}
