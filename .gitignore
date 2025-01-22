@@ -8,6 +8,7 @@
 
 # Node
 /ng19App1/node_modules
+/my-sdk/node_modules
 npm-debug.log
 yarn-error.log
 
