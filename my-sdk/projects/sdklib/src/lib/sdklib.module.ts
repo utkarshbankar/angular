@@ -14,7 +14,7 @@ export const SDK_SERVICE = new InjectionToken<SdkLibBaseService>('SdklibService'
     providers:[
         {
             //This is the pattern we can use for the mock and actual scenario testing
-            provide: SDK_SERVICE,
+            provide: SDK_SERVICE, // provide:sdkLibBaseService
             useFactory: (http:HttpClient) => ( isMock() ? new SdklibMockService(http) : new SdklibService(http)),
             deps:[HttpClient]
         }
