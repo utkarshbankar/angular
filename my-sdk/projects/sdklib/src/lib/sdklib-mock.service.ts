@@ -6,28 +6,27 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class SdklibService  extends SdkLibBaseService{
+export class SdklibMockService extends SdkLibBaseService {
 
-  constructor(private http:HttpClient) { 
+
+  constructor(private http:HttpClient) {
     super();
-  }
+   }
 
-  getSdkData(): Observable<any> {
-    // here return the actual api calls using http
-    return of([]);  
-  }
+   getSdkData(): Observable<any> {
+     return of([]);
+   }
 
   getSdkDataOne1(): Observable<any> {
-    return of([]);  
+    return of([]);
   }
 
   getSdkDataMethodWithPArams(param1: any): Observable<any> {
-    return of([]);
+    return of([]);  
   }
 
   getSdkDataMethodWithMultiplePArams(param1: any, param2: any): Observable<any> {
-    return of([]);
+    return of([]);  
   }
 
-  
 }
