@@ -1,1 +1,12 @@
 <p>forms works!</p>
+
+
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+    <input type="text" name="userName" [(ngModel)]="formModel.userName"> <br>
+    <input type="text" name="email" [(ngModel)]="formModel.email"><br>
+    <input type="text" name="pwd" [(ngModel)]="formModel.pwd"><br><br>
+<button type="submit">
+    Submit
+</button>
+
+</form>

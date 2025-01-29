@@ -7,9 +7,10 @@ import { NgTemplateOutlet } from '@angular/common';
 import { TodoComponent } from '../todo/todo.component';
 import { CartComponent } from "../cart/cart.component";
 import { AuthComponent } from '../auth/auth.component';
+import { FormsComponent } from '../forms/forms.component';
 @Component({
   selector: 'app-container',
-  imports: [RouterModule, FormsModule, Test2Component, Test1Component, NgTemplateOutlet, TodoComponent, CartComponent, AuthComponent],
+  imports: [RouterModule, FormsModule, FormsComponent, Test2Component, Test1Component, NgTemplateOutlet, TodoComponent, CartComponent, AuthComponent],
   templateUrl: './container.component.html',
   styleUrl: './container.component.scss'
 })
