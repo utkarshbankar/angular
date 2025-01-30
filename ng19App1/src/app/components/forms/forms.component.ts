@@ -15,9 +15,16 @@ export class FormsComponent {
     email:'',
     pwd:''
   }
- 
   
   onSubmit(formData:any){
     console.log('submit', formData['value']);
+  }
+
+  onReset(formData:any){
+    this.formModel = {
+      userName: '',
+      email:'',
+      pwd:''
+    }
   }
 }
