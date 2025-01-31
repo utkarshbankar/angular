@@ -1,12 +1,41 @@
-<p>forms works!</p>
+<h2>Template Driven Form</h2>
+<div class="tdf-wrapper">
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)" autocomplete="off">
+    
+    <input type="text" name="userName" [(ngModel)]="formModel.userName" 
+            #name="ngModel"
+            minlength="5"
+            required
+            placeholder="Enter User Name"> 
+    
+    @if (name.invalid && name.touched) {
+        @if (name.hasError('required')) {
+            <div>
+                Name is required.
+            </div>
+        }
+        @if(name.hasError('minlength')){
+                <div>
+                    Name should have maximum 5 char
+                </div>
+        }
+    }
 
+    <input type="text" name="email" [(ngModel)]="formModel.email" placeholder="Enter Email Address">
+    
+    <input type="text" name="pwd" #pwd="ngModel" [(ngModel)]="formModel.pwd" required placeholder="Enter Password">
+    @if(pwd.invalid && pwd.touched){
+        @if(pwd.hasError('required')){
+            <div>
+                Password is required
+            </div>
+        }
+    }
 
-<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
-    <input type="text" name="userName" [(ngModel)]="formModel.userName"> <br>
-    <input type="text" name="email" [(ngModel)]="formModel.email"><br>
-    <input type="text" name="pwd" [(ngModel)]="formModel.pwd"><br><br>
-<button type="submit">
-    Submit
-</button>
-
+    <div class="button-wrapper">
+        <button type="reset" > Clear</button>
+        <button type="submit" [disabled]="userForm.invalid"> Submit</button>    
+    </div>
+    
 </form>
+</div>
