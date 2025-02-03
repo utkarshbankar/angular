@@ -1,0 +1,30 @@
+<p>reactive-forms works!</p>
+
+
+<form [formGroup]="userFromGroup" (ngSubmit)="onFormSubmit()">
+
+    <input type="text"  name="userName" formControlName="userName">
+    @if (userFromGroup.controls.userName.touched) {
+        @if (userFromGroup.controls.userName.hasError('required')) {
+            <div> 
+                Name is required
+            </div>
+        }
+        @if(userFromGroup.controls.userName.hasError('minlength')){
+            <div>
+                Name must be minimum 6 char.
+            </div>
+        }
+    }
+    
+    <input type="text" name="email" formControlName="email">
+    
+    <div></div>
+
+    <input type="password" name="pwd" formControlName="pwd">
+    <div></div>
+
+    <button type="submit">
+        Submit
+    </button>
+</form>

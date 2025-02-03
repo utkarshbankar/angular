@@ -1,5 +1,5 @@
 import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, OnChanges, OnInit, SimpleChanges } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { Test2Component } from './test2/test2.component';
 import { Test1Component } from "./test1/test1.component";
@@ -8,9 +8,10 @@ import { TodoComponent } from '../todo/todo.component';
 import { CartComponent } from "../cart/cart.component";
 import { AuthComponent } from '../auth/auth.component';
 import { FormsComponent } from '../forms/forms.component';
+import { ReactiveFormsComponent } from '../reactive-forms/reactive-forms.component';
 @Component({
   selector: 'app-container',
-  imports: [RouterModule, FormsModule, FormsComponent, Test2Component, Test1Component, NgTemplateOutlet, TodoComponent, CartComponent, AuthComponent],
+  imports: [RouterModule, FormsModule, ReactiveFormsModule, FormsComponent, ReactiveFormsComponent, Test2Component, Test1Component, NgTemplateOutlet, TodoComponent, CartComponent, AuthComponent],
   templateUrl: './container.component.html',
   styleUrl: './container.component.scss'
 })
