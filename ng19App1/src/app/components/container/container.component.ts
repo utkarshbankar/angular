@@ -9,9 +9,11 @@ import { CartComponent } from "../cart/cart.component";
 import { AuthComponent } from '../auth/auth.component';
 import { FormsComponent } from '../forms/forms.component';
 import { ReactiveFormsComponent } from '../reactive-forms/reactive-forms.component';
+import { RxjsOprComponent } from "../rxjs-opr/rxjs-opr.component";
+import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-container',
-  imports: [RouterModule, FormsModule, ReactiveFormsModule, FormsComponent, ReactiveFormsComponent, Test2Component, Test1Component, NgTemplateOutlet, TodoComponent, CartComponent, AuthComponent],
+  imports: [RouterModule, FormsModule, ReactiveFormsModule, FormsComponent, ReactiveFormsComponent, Test2Component, Test1Component, NgTemplateOutlet, TodoComponent, CartComponent, AuthComponent, RxjsOprComponent],
   templateUrl: './container.component.html',
   styleUrl: './container.component.scss'
 })
