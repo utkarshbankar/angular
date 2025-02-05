@@ -7,7 +7,7 @@ import { routes } from './app.routes';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
 import { appEffects, appStore } from './store/state';
 import { TodoService } from './services/todo/todo.service';
-
+import { provideHttpClient } from '@angular/common/http';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -16,6 +16,7 @@ export const appConfig: ApplicationConfig = {
     provideClientHydration(withEventReplay()),
     provideStore(appStore),
      provideEffects(appEffects), 
-     TodoService
+     TodoService,
+     provideHttpClient()
   ]
 };

@@ -24,5 +24,24 @@
     .content {
       padding: 1rem; /* Inner spacing for content */
       flex: 1;
+      max-height: 90vh;
+      overflow: auto;
     }
+
+    .content::-webkit-scrollbar {
+      width: 8px;
+  }
+    .content::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 5px;
+  }
+  
+  .content::-webkit-scrollbar-thumb {
+      background: rgb(165, 243, 8);
+      border-radius: 10px;
+  }
+  
+  .content::-webkit-scrollbar-thumb:hover {
+      background: darkgreen;
+  }
 }  
