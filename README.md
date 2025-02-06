@@ -5,3 +5,4 @@
 - event
 - FASAD pattern- apps common sdk
 - mocking strategy
+- internship project
