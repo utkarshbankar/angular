@@ -1,6 +1,28 @@
 <p>rxjs-opr works!</p>
 
 <h3>🔹 MergeMap (Users & Posts in Parallel)</h3>
-  <div *ngFor="let post of posts">
+  <!-- <div *ngFor="let post of users">
+    <span>{{post.id}}</span>
     <p>{{ post.title }}</p>
+  </div> -->
+  <!--  -->
+  <div>
+    <h2>CombineLatest Example</h2>
+    
+    <!-- Dog Image -->
+    <div *ngIf="dogs">
+      <h3>Random Dog Image</h3>
+      <img [src]="dogs.message" alt="Dog Image" width="200">
+    </div>
+  
+    <!-- Rick and Morty Characters -->
+    <div *ngIf="rickyChars?.length">
+      <h3>Rick and Morty Characters</h3>
+      <ul>
+        <li *ngFor="let character of rickyChars">
+          <!-- <img [src]="character.image" alt="{{ character.name }}" width="50"> -->
+          {{ character.name }}
+        </li>
+      </ul>
+    </div>
   </div>

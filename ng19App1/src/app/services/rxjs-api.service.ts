@@ -8,6 +8,9 @@ import { Observable } from 'rxjs';
 })
 export class RxjsApiService {
 
+   // API endpoint to fetch weather data for each city
+   weatherUrl = 'https://api.openweathermap.org/data/2.5/weather';
+
   constructor(private http: HttpClient) {}
 
   getUsers(): Observable<any> {
