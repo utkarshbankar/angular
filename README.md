@@ -7,4 +7,7 @@
 - mocking strategy
 - internship project
 - planning
-- microfront end
+- microfront business
+
+- Storybook
+- simulator
