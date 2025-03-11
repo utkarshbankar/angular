@@ -1,5 +1,6 @@
 # angular
 
+- shll and apps
 - app 
 - sdk - with abstraction pattern
 - event
@@ -8,6 +9,5 @@
 - internship project
 - planning
 - microfront business
-
 - Storybook
 - simulator
