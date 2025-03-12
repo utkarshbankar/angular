@@ -11,3 +11,4 @@
 - microfront business
 - Storybook
 - simulator
+- content with platform
