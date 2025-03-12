@@ -11,4 +11,4 @@
 - microfront business
 - Storybook
 - simulator
-- content with platform
+- content React or Angular with platform
