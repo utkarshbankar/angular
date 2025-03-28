@@ -13,4 +13,4 @@
 - simulator
 - content React or Angular with platform
 - schematics for temp
-- records
+- records- copy in folder
