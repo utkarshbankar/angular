@@ -14,4 +14,3 @@
 - content React or Angular with platform
 - schematics for temp
 - records- copy in folder
-- Test one for test
